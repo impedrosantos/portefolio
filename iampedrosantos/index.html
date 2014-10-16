@@ -17,10 +17,15 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <script src="js/wow.min.js"></script>
+    <script src="wow/dist/wow.min.js"></script>
     <script>
-     new WOW().init();
+       new WOW().init();
     </script>
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/hover.zoom.js"></script>
@@ -48,9 +53,11 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="work.html">Work</a></li>
-            <li><a href="about.html">Sobre</a></li>
-            <li><a href="contact.html">Contacto</a></li>
+            <li><a href="#knowledge">Conhecimentos</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#education">Educação</a></li>
+            <li><a href="#aboutme">Sobre Mim</a></li>
+            <li><a href="#contact">Contacto</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -58,163 +65,191 @@
 
 	<!-- +++++ Welcome Section +++++ -->
 	<div id="ww">
-	    <div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 centered">
-					<img class='img-circle' src="assets/img/user.png" alt="Stanley">
-					<h1>Olá, sou o Pedro!</h1>
-					<p>Bem-vindo ao meu portfolio! Este é o espaço onde dou a conhecer as minhas competências nas mais variadas linguagens de programação, e todos os meus trabalhos desenvolvidos durante os meus 3 anos de licenciatura!</p>
-					<p>Para mais informações pode contactar-me por <a href="https://twitter.com/iampedrosantos">e-mail</a>, responderei assim que possível.</p>
+	    <div class="container pt">
+        <div class="row mt">
+          <div class="col-lg-6 wow bounceInLeft">
+            <h1>Olá, sou o Pedro!</h1>
+            <p>Bem-vindo ao meu portfolio! Este é o espaço onde dou a conhecer as minhas competências nas mais variadas linguagens de programação, e todos os meus trabalhos desenvolvidos durante os meus 3 anos de licenciatura!</p>
+            <p>Para mais informações pode contactar-me por <a href="https://twitter.com/iampedrosantos">e-mail</a>, responderei assim que possível.</p>
+          </div><!-- /colg-lg-6 -->
 
-				</div><!-- /col-lg-8 -->
-			</div><!-- /row -->
-	    </div> <!-- /container -->
+          <div class="col-lg-6 wow bounceInRight">
+            <img class='img-profile' src="assets/img/user.png" alt="profile-pic">
+          </div><!-- /col-lg-6 -->
+        </div><!-- /row -->
+      </div><!-- /container -->
 	</div><!-- /ww -->
 
 
-	<!-- +++++ Projects Section +++++ -->
+  <!-- +++++ Information Section +++++ -->
+  <div class="container pt">
+    <div id="notlink" class="row mt">
+      <a name="knowledge"</a>
+      <div class="col-lg-6 wow bounceInLeft">
+        <h4>COMPETÊNCIAS</h4>
+        <p>Neste espaço estão representadas as minhas competências em cada linguagem de programação. Procuro sempre aprender mais um pouco de cada uma delas, até nos tempos livres, pois o conhecimento é muito importante no ramo da programação.</p>
+      </div><!-- /colg-lg-6 -->
 
-	<div class="container pt">
-		<div class="row mt centered">
-			<div class="col-lg-4">
-				<a class="zoom green" href="work01.html"><img class="img-responsive" src="assets/img/portfolio/port01.jpg" alt="" /></a>
-				<p>APE</p>
-			</div>
-			<div class="col-lg-4">
-				<a class="zoom green" href="work01.html"><img class="img-responsive" src="assets/img/portfolio/port02.jpg" alt="" /></a>
-				<p>RAIDERS</p>
-			</div>
-			<div class="col-lg-4">
-				<a class="zoom green" href="work01.html"><img class="img-responsive" src="assets/img/portfolio/port03.jpg" alt="" /></a>
-				<p>VIKINGS</p>
-			</div>
-		</div><!-- /row -->
-		<div class="row mt centered">
-			<div class="col-lg-4">
-				<a class="zoom green" href="work01.html"><img class="img-responsive" src="assets/img/portfolio/port04.jpg" alt="" /></a>
-				<p>YODA</p>
-			</div>
-			<div class="col-lg-4">
-				<a class="zoom green" href="work01.html"><img class="img-responsive" src="assets/img/portfolio/port05.jpg" alt="" /></a>
-				<p>EMPERORS</p>
-			</div>
-			<div class="col-lg-4">
-				<a class="zoom green" href="work01.html"><img class="img-responsive" src="assets/img/portfolio/port06.jpg" alt="" /></a>
-				<p>CHIEFS</p>
-			</div>
-		</div><!-- /row -->
-	</div><!-- /container -->
+      <div class="col-lg-6 wow flipInX">
+        <h4>CONHECIMENTOS</h4>
+        HTML
+        <div class="progress">
+          <div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+            <span class="sr-only">60% Complete</span>
+          </div>
+        </div>
+
+        CSS
+        <div class="progress">
+          <div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+            <span class="sr-only">55% Complete</span>
+          </div>
+        </div>
+
+        C#
+        <div class="progress">
+          <div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+            <span class="sr-only">80% Complete</span>
+          </div>
+        </div>
+
+        Java
+        <div class="progress">
+          <div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+            <span class="sr-only">95% Complete</span>
+          </div>
+        </div>
+
+        Python
+        <div class="progress">
+          <div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+            <span class="sr-only">80% Complete</span>
+          </div>
+        </div>
+
+        UML
+        <div class="progress">
+          <div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+            <span class="sr-only">80% Complete</span>
+          </div>
+        </div>
+
+        SQL
+        <div class="progress">
+          <div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+            <span class="sr-only">80% Complete</span>
+          </div>
+        </div>
+
+      </div><!-- /col-lg-6 -->
+    </div><!-- /row -->
+  </div><!-- /container -->
 
 
-<!-- +++++ Information Section +++++ -->
+  <!-- +++++ Projects Section +++++ -->
 
-<div class="container pt">
-  <div class="row mt centered">
-    <div class="col-lg-3">
-      <span class="glyphicon glyphicon-book"></span>
-      <p>Um livro, bah.</p>
-    </div>
+  <div id="notlink" class="container pt wow fadeIn">
+    <div class="row mt centered">
+			<a name="projects"</a>
+      <h3>OS MEUS PROJETOS</h3>
+      <p></p>
+      <div class="col-lg-4">
+        <a class="zoom green" href="sokoban.html"><img class="img-responsive" src="assets/img/portfolio/sokoban.jpg" alt="" /></a>
+        <p>Sokoban</p>
+      </div>
+      <div class="col-lg-4">
+        <a class="zoom green" href="pathfinding.html"><img class="img-responsive" src="assets/img/portfolio/pathfinding.jpg" alt="" /></a>
+        <p>Pathfinding</p>
+      </div>
+      <div class="col-lg-4">
+        <a class="zoom green" href="jarbas.html"><img class="img-responsive" src="assets/img/portfolio/jarbas.jpg" alt="" /></a>
+        <p>Jarbas - Temível Jardineiro</p>
+      </div>
+    </div><!-- /row -->
+    <div class="row mt centered">
+      <div class="col-lg-4">
+        <a class="zoom green" href="ensinosuperior.html"><img class="img-responsive" src="assets/img/portfolio/vagas.jpg" alt="" /></a>
+        <p>Estudo de Colocados no Ensino Superior</p>
+      </div>
+      <div class="col-lg-4">
+        <a class="zoom green" href="presencasestig.html"><img class="img-responsive" src="assets/img/portfolio/presencas.jpg" alt="" /></a>
+        <p>Controlo de Presenças Na ESTIG</p>
+      </div>
+      <div class="col-lg-4">
+        <a class="zoom green" href="crazycar.html"><img class="img-responsive" src="assets/img/portfolio/crazycar.jpg" alt="" /></a>
+        <p>CrazyCar</p>
+      </div>
+    </div><!-- /row -->
+  </div><!-- /container -->
 
-    <div class="col-lg-3">
-      <span class="glyphicon glyphicon-user"></span>
-      <p>Uma silhueta.</p>
-    </div>
 
-    <div class="col-lg-3">
-      <span class="glyphicon glyphicon-fire"></span>
-      <p>Flamas.</p>
-    </div>
-
-    <div class="col-lg-3">
-      <span class="glyphicon glyphicon-globe"></span>
-      <p>O planeta azul.</p>
-    </div>
-  </div><!-- /row -->
-
+<!-- /Educação -->
+<div id="notlink" class="container pt   wow bounceInUp">
   <div class="row mt">
-    <div class="col-lg-6">
-      <h4>Competências</h4>
-      <p>Ao lado é possível ver as minhas competências em cada linguagem de programação. Procuro sempre aprender mais um pouco de cada uma delas, até nos tempos livres, pois o conhecimento é muito importante no ramo da programação.</p>
-    </div><!-- /colg-lg-6 -->
-
-    <div class="col-lg-6">
-      <h4>Conhecimentos</h4>
-      HTML + CSS
-      <div class="progress">
-        <div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-          <span class="sr-only">60% Complete</span>
-        </div>
+    <div class="centered">
+      <a name="education"</a>
+      <h3>EDUCAÇÃO</h3>
+      <hr class="col-lg-6 col-lg-offset-3"></br>
+      <div class="col-lg-6 col-sm-6">
+        <i class="fa fa-book fa-5x"></i>
+        <h4>Escola Secundária com 3º Ciclo D. Manuel I</h2>
+        <p>Curso Profissional de Técnico de Gestão de Equipamentos Informáticos (2009-2012)</p>
+        <p>Nota final 14 Valores</p>
       </div>
-
-      C#
-      <div class="progress">
-        <div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-          <span class="sr-only">80% Complete</span>
-        </div>
+      <div class="col-lg-6 col-sm-6">
+        <i class="fa fa-book fa-5x"></i>
+        <h4>Escola Superior de Tecnologia e Gestão de Beja</h2>
+        <p>Licenciatura em Engenharia Informática (2012-Presente)</p>
       </div>
-
-      Java
-      <div class="progress">
-        <div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-          <span class="sr-only">95% Complete</span>
-        </div>
-      </div>
-
-      Python
-      <div class="progress">
-        <div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-          <span class="sr-only">80% Complete</span>
-        </div>
-      </div>
-
-      UML
-      <div class="progress">
-        <div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-          <span class="sr-only">80% Complete</span>
-        </div>
-      </div>
-
-      SQL
-      <div class="progress">
-        <div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-          <span class="sr-only">80% Complete</span>
-        </div>
-      </div>
-
-    </div><!-- /col-lg-6 -->
-  </div><!-- /row -->
-</div><!-- /container -->
-
-<div class="container pt">
-  <div class="row mt">
-    <div class="col-lg-6 col-lg-offset-3 centered">
-      <h3>CONTACTO</h3>
-      <hr>
-      <p>Para me contactar, por favor preencha o formulário abaixo.</p>
     </div>
   </div>
-  <div class="row mt">
-    <div class="col-lg-8 col-lg-offset-2">
-      <form role="form">
-        <div class="form-group">
-          <input type="name" class="form-control" id="NameInputEmail1" placeholder="Your Name">
-          <br>
-        </div>
-        <div class="form-group">
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-          <br>
-        </div>
-        <div class="form-group">
-          <input type="email" class="form-control" id="subjectEmail1" placeholder="Subject">
-          <br>
-        </div>
-        <textarea class="form-control" rows="6" placeholder="Enter your text here"></textarea>
-          <br>
-        <button type="submit" class="btn btn-success">SUBMIT</button>
-      </form>
-    </div>
-  </div><!-- /row -->
 </div><!-- /container -->
+
+
+		<!-- /Sobre mim -->
+<div id="notlink" class="container pt   wow bounceInUp">
+  <div class="row mt">
+    <div class="col-lg-6 col-lg-offset-3 centered">
+      <a name="aboutme"</a>
+      <h3>SOBRE MIM</h3>
+      <hr>
+      <p>BLABLABLEWS.</p>
+    </div>
+  </div>
+</div><!-- /container -->
+
+
+  <!-- /CONTACTS -->
+  <div id="notlink" class="container pt   wow bounceInUp">
+    <div class="row mt">
+      <div class="col-lg-6 col-lg-offset-3 centered">
+        <a name="contact"</a>
+        <h3>CONTACTO</h3>
+        <hr>
+      </div>
+    </div>
+    <div class="row mt">
+      <div class="col-lg-8 col-lg-offset-2">
+        <form role="form">
+          <div class="form-group">
+            <input type="name" class="form-control" id="NameInputEmail1" placeholder="Nome">
+            <br>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="O seu email">
+            <br>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="subjectEmail1" placeholder="Assunto">
+            <br>
+          </div>
+          <textarea class="form-control" rows="6" placeholder="Mensagem"></textarea>
+            <br>
+          <button type="submit" class="btn btn-success">ENVIAR</button>
+        </form>
+      </div>
+    </div><!-- /row -->
+  </div><!-- /container -->
 
 
 	<!-- +++++ Footer Section +++++ -->
@@ -223,34 +258,48 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4">
-					<h4>Contactos</h4>
+					<h4>O meu endereço e-mail</h4>
 					<p>
-						skyzzoor@gmail.com,<br/>
-						nr, <br/>
-						Portugal
-					</p>
+						skyzzoor@gmail.com<br/>
+          </p>
 				</div><!-- /col-lg-4 -->
 
 				<div class="col-lg-4">
-					<h4>My Links</h4>
-					<p>
-						<a href="https://github.com/skyzzoor">GitHub</a><br/>
-						<a href="https://twitter.com/iampedrosantos">Twitter</a><br/>
-						<a href="https://www.facebook.com/pedromsantos7">Facebook</a><br/>
-            <a href="http://instagram.com/iampedrosantos">Instagram</a>
-					</p>
+      <ul class="list-inline">
+         <li>
+             <a href="https://www.facebook.com/pedromsantos7" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+         </li>
+         <li>
+             <a href="https://twitter.com/iampedrosantos" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+         </li>
+         <li>
+           <a href="https://github.com/skyzzoor" target="_blank" class="btn-social btn-outline"><i class="fa fa fa-github"></i></a>
+         </li>
+         <li>
+             <a href="https://www.linkedin.com/in/iampedrosantos" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+         </li>
+         <li>
+           <a href="http://instagram.com/iampedrosantos/" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw  fa-instagram"></i></a>
+         </li>
+     </ul>
 				</div><!-- /col-lg-4 -->
 
-				<div class="col-lg-4">
-					<h4>Sobre mim</h4>
-					<p>O meu nome é Pedro Santos, gosto de desportos radicais, aventura, desporto e programar.</p>
-				</div><!-- /col-lg-4 -->
+        <div class="col-lg-4">
+          <h4>Download Curriculum vitæ</h4>
+          <p>
+            <a href="https://www.dropbox.com/s/grw7hakjogwxlnt/CV-PedroSantos.pdf?dl=0" target="_blank" ><i class="fa fa-file-pdf-o fa-3x"></i></a>
+          </p>
+        </div><!-- /col-lg-4 -->
 
 			</div>
 
 		</div>
 	</div>
 
+
+    <!-- Contact Form JavaScript -->
+    <script src="assets/js/jqBootstrapValidation.js"></script>
+    <script src="assets/js/contact_me.js"></script>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

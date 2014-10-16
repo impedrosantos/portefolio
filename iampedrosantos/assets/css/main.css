@@ -1,10 +1,9 @@
 /*
- * Author: Carlos Alvarez
- * URL: http://alvarez.is
+ * Author: Pedro Santos
+ * URL:
  *
- * Project Name: STANLEY - Free Bootstrap 3 Theme
+ * Project Name: Portfolio
  * Version: 1.0
- * URL: http://blacktie.co
  */
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
@@ -34,10 +33,14 @@ h1 {
 }
 
 
-.img-circle {
+.img-profile {
     border-radius: 50%;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 
 /* Paragraph & Typographic */
 p {
@@ -52,7 +55,7 @@ p {
 
 /* Links */
 a {
-    color: #1abc9c;
+    color: #3b7fce;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -94,13 +97,13 @@ a:after {
 }
 
 .navbar-inverse {
-	padding-bottom: 70px;
-	padding-top: 70px;
+	padding-bottom: 20px;
+	padding-top: 20px;
 }
 
 .navbar-inverse {
-	background-color: #1abc9c;
-	border-color: #16a085;
+	background-color: #1e5676;
+	border-color: #145fa1;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -126,7 +129,41 @@ a:after {
 }
 
 .progress-bar-theme {
-  background-color: #1abc9c;
+  background-color: #1b6483;
+}
+
+.btn-social {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.btn-outline {
+    margin-top: 15px;
+    border: solid 2px #fff;
+    font-size: 20px;
+    color: #fff;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+    border: solid 2px #fff;
+    color: #178bbd;
+    background: #fff;
+}
+
+/* +++++ EXEPTIONS +++++ */
+div#notlink a {
+  color: #7b7b7b;
 }
 
 
@@ -153,19 +190,21 @@ a:after {
 
 
 #footer {
-	background-color: #2f2f2f;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	background-color: #333;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 #footer p {
+  text-align: center;
 	color: white;
 }
 
 #footer h4 {
-	color: white;
+  text-align: center;
+	color: #ccc;
 	text-transform: uppercase;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 }
 
 
@@ -225,7 +264,7 @@ bt {
         top:0; left:0;
         bottom:0; right:0;
         display:none;
-        background-image:url(../img/zoom.png);
+        background-image:url(../img/open.png);
         background-repeat:no-repeat;
         background-position:center;
     }
@@ -242,5 +281,5 @@ bt {
 
 .glyphicon {
 	font-size: 40px;
-	color: #1abc9c;
+	color: #1e5676;
 }
