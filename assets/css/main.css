@@ -99,7 +99,8 @@ hr {
   padding: 0;
 }
 .navbar {
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
+	font-family: Gill Sans / Gill Sans MT, sans-serif;
   margin-bottom: 0px;
 }
 .navbar-inverse {
@@ -118,8 +119,8 @@ hr {
 }
 .navbar-brand {
   font-weight: 700;
-  font-size: 25px;
-  letter-spacing: 2px;
+  font-size: 21px;
+  letter-spacing: 1px;
 }
 .navbar-inverse .navbar-brand {
   color: white;
