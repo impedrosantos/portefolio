@@ -267,4 +267,9 @@ bt {
 }
 .zoomOverlay{
   background-color: #272931 !important;
+  width: 100% !important;
+  max-width: 490px !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
