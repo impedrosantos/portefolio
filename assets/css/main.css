@@ -265,3 +265,6 @@ bt {
   font-size: 40px;
   color: #1e5676;
 }
+.zoomOverlay{
+  background-color: #e23231 !important;
+}
