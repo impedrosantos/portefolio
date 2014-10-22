@@ -48,7 +48,7 @@ h1 {
   margin-left: auto;
   margin-right: auto;
 }
-.carousel{
+.carousel {
   width: 100%;
   max-width: 490px;
   display: block;
@@ -240,6 +240,11 @@ bt {
   display: block;
   position: relative;
   overflow: hidden;
+  width: 100% !important;
+  max-width: 490px !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
   background: transparent url(../img/loader.gif) no-repeat center;
 }
 .zoomOverlay {
@@ -252,6 +257,12 @@ bt {
   background-image: url(../img/open.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #272931 !important;
+  width: 100% !important;
+  max-width: 490px !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 .zoom2 {
   opacity: 1;
@@ -264,12 +275,4 @@ bt {
 .glyphicon {
   font-size: 40px;
   color: #1e5676;
-}
-.zoomOverlay{
-  background-color: #272931 !important;
-  width: 100% !important;
-  max-width: 490px !important;
-  display: block !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
 }
