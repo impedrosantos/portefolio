@@ -14,6 +14,9 @@
   <!-- Bootstrap core CSS -->
   <link href="assets/css/bootstrap.css" rel="stylesheet">
 
+	<!-- jquery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
   <!-- pace -->
   <script src="pace/pace.js"></script>
   <link href="pace/themes/pace-theme-minimal.css" rel="stylesheet" />
@@ -237,7 +240,7 @@
   <div id="notlink" class="container pt   wow bounceInUp">
     <div class="row mt">
       <div class="col-lg-6 col-lg-offset-3 centered">
-        <a name="aboutme"></a> 
+        <a name="aboutme"></a>
         <h3>SOBRE MIM</h3>
         <hr></br>
       </div>
@@ -274,7 +277,7 @@
 
 
   <!-- /CONTACTS -->
-  <div id="notlink" class="container pt   wow bounceInUp">
+  <div class="container pt   wow bounceInUp">
     <div class="row mt">
       <div class="col-lg-6 col-lg-offset-3 centered">
         <a name="contact"></a>
@@ -346,7 +349,7 @@
             </ul><br/>
           </div>
           <!-- /col-lg-4 -->
-				
+
 					<div class="col-lg-4">
 							<h4>Download Curriculum vitæ</h4>
 							<p>
@@ -359,6 +362,30 @@
     </div>
   </div>
 
+  <!-- Back to top Button -->
+  <div>
+  <a href="#" class="back-to-top">
+		<img src="assets/img/backtotop.png" alt="" /></a>
+  		<script>
+  			jQuery(document).ready(function() {
+  				var offset = 220;
+  				var duration = 500;
+  				jQuery(window).scroll(function() {
+  					if (jQuery(this).scrollTop() > offset) {
+  						jQuery('.back-to-top').fadeIn(duration);
+  					} else {
+  						jQuery('.back-to-top').fadeOut(duration);
+  					}
+  				});
+
+  				jQuery('.back-to-top').click(function(event) {
+  					event.preventDefault();
+  					jQuery('html, body').animate({scrollTop: 0}, duration);
+  					return false;
+  				})
+  			});
+  		</script>
+  </div>
 
   <!-- Contact Form JavaScript -->
   <script src="assets/js/jqBootstrapValidation.js"></script>

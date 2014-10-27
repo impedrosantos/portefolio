@@ -106,9 +106,7 @@ hr {
 .navbar-inverse {
   padding-bottom: 15px;
   padding-top: 15px;
-}
-.navbar-inverse {
-  background-color: #2f3740;
+	background-color: #2f3740;
   border-color: #333633;
 }
 .navbar-inverse .navbar-nav > li > a {
@@ -159,6 +157,22 @@ hr {
   border: solid 2px #fff;
   color: #45494b;
   background: #fff;
+}
+.back-to-top {
+	position: fixed;
+	bottom: 2em;
+	right: 0px;
+	text-decoration: none;
+	color: #000000;
+	background-color: rgba(235, 235, 235, 0.80);
+	font-size: 12px;
+	padding: 0.5em;
+	display: none;
+	border-radius: 9%;
+}
+
+.back-to-top:hover {    
+    background-color: rgba(135, 135, 135, 0.50);
 }
 /* +++++ EXEPTIONS +++++ */
 
