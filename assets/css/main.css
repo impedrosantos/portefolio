@@ -163,16 +163,14 @@ hr {
 	bottom: 2em;
 	right: 1em;
 	text-decoration: none;
-	color: #000000;
-	background-color: rgba(57, 57, 57, 0.43);
 	font-size: 9px;
-	padding: 0.5em;
 	display: none;
-	border-radius: 7%;
+	border-radius: 50%;
 }
 
 .back-to-top:hover {    
-    background-color: rgba(34, 34, 34, 0.5);
+    /*background-color: rgba(34, 34, 34, 0.5);*/
+	opacity: 0.7;
 }
 /* +++++ EXEPTIONS +++++ */
 
