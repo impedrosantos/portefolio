@@ -184,6 +184,11 @@ div#justify p {
 	text-align: justify;
   text-justify: inter-word;
 }
+div#copyright p {
+	font-size: 13px;
+	text-align: right;
+	color: #606060;
+}
 /* Helpers */
 
 .mt {
