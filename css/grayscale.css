@@ -465,6 +465,10 @@ footer h3, h4{
 	margin: 10px
 }
 
+#heart{
+	color: #9b3f3f;
+}
+
 footer p {
     margin: 0;
 		text-align: right;
