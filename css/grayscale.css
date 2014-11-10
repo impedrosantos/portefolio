@@ -335,7 +335,7 @@ a:focus {
   line-height: 45px;
 }
 .btn-outline {
-  margin-top: 15px;
+  margin-top: 1px;
   border: solid 2px #fff;
   font-size: 30px;
   color: #fff;
@@ -459,6 +459,10 @@ footer {
 		background-color: #242424;
 		color: #414141;
 		text-align: center;
+}
+
+footer h3, h4{
+	margin: 10px
 }
 
 footer p {
