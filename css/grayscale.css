@@ -86,6 +86,9 @@ a:focus {
     text-decoration: none;
     color: #11505d;
 }
+.fa-bars{
+	color: white;
+}
 
 .light {
     font-weight: 400;
@@ -222,10 +225,10 @@ a:focus {
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid #fff;
+    border: 2px solid #536a8e;
     border-radius: 35px;
     font-size: 40px;
-    color: #fff;
+    color: #536a8e;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -235,8 +238,8 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.21);
+    color: #536a8e;
+    background: rgba(83, 106, 142, 0.24);
 }
 
 .btn-circle i.animated {
@@ -295,28 +298,6 @@ a:focus {
     padding-top: 100px;
 }
 
-.links-section {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../img/macbook.jpg) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-@media(min-width:767px) {
-    .content-section {
-        padding-top: 90px;
-    }
-
-    .links-section {
-        padding: 100px 0;
-    }
-}
-
 .btn {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -367,8 +348,9 @@ a:focus {
 .btn-outline.active {
   border: solid 2px #fff;
   color: #45494b;
-  background: rgba(83, 106, 142, 0.39);
+  background: #fff;
 }
+
 .back-to-top {
 	position: fixed;
 	bottom: 2em;
@@ -473,9 +455,10 @@ section#contact .text-danger {
 }
 
 footer {
-    padding: 50px 0 0;
+    padding: 10px 0 0;
 		background-color: #242424;
 		color: #414141;
+		text-align: center;
 }
 
 footer p {
