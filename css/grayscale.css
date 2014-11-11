@@ -98,10 +98,14 @@ span.text-content span {
   text-align: center;
   vertical-align: middle;
 }
-section#projects a {
+.project-info a {
   color: #2e3b5d;
 }
-section#projects a:hover {
+.project-info p {
+  margin: 5pt;
+}
+
+.project-info a:hover {
   color: #20222e;
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
