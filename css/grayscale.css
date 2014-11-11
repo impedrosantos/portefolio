@@ -47,7 +47,7 @@ section#aboutme p {
 .progress {
   height: 18pt;
   background-color: #ddd;
-  margin-bottom: 13px;
+  margin-bottom: 7pt;
 }
 .img-project {
   width: 100%;
@@ -462,6 +462,12 @@ h4 {
 }
 #heart {
   color: #9b3f3f;
+}
+#html-logo{
+	color: rgb(195, 70, 13);
+}
+#css-logo{
+	color: rgb(75, 108, 154);
 }
 footer p {
   margin: 0;
