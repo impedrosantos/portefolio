@@ -30,6 +30,7 @@
   <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="octicons/octicons.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -107,7 +108,7 @@
         <h2>Educação</h2>
         <p>Atualmente estou a frequentar o 3º ano da Licenciatura em Engenharia Informática na Escola Superior de Teconlogia e Gestão de Beja.</p>
         <p>Concluí com sucesso o curso de <b>Técnico de Gestão de Equipamentos Informáticos</b> na Escola Secundária c/ 3º Ciclo D. Manuel I - Beja, estando assim apto resolver problemas de <i>hardware</i>, bem como <i>software</i>.</p>
-        <p>Exerci funções de estagiário no Centro de Informática da <b>Base Aérea Nº11 - Beja</b>
+        <p>Exerci funções de estagiário no Centro de Informática da <b>Base Aérea Nº11 - Beja</b>.
         </p>
       </div>
       <div class="col-lg-6" id="skills">
@@ -175,7 +176,6 @@
         <i class="fa fa-angle-double-down animated"></i>
       </a>
     </div>
-
   </section>
 
   <!-- About me -->
@@ -350,9 +350,8 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-
       <div class="col-lg-6">
-        <h3>Redes Sociais</h3>
+        <h3 class="light">Redes Sociais</h3>
         <ul class="list-inline">
           <li>
             <a href="https://www.facebook.com/pedromsantos7" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
@@ -372,12 +371,12 @@
         </ul>
       </div>
       <div class="col-lg-6">
-        <h3>Downloads</h3>
+        <h3 class="light">Downloads</h3>
         <h4><a class="light" href="https://www.dropbox.com/s/grw7hakjogwxlnt/CV-PedroSantos.pdf?dl=0" target="_blank"><i class="fa fa-file-pdf-o"></i> Curriculum vitæ</a></h4>
         <h4><a class="light" href="https://www.dropbox.com/s/fbdsbun9j0jg6mx/Certificado%20de%20Habilita%C3%A7%C3%B5es.pdf?dl=0" target="_blank"><i class="fa fa-file-pdf-o"></i> Certificado de Habilitações</a></h4>
       </div>
     </div>
-    <p>Made with <i id="heart" class="fa fa-heart"></i> by Pedro Santos #2014</p>
+    <p><span id="code-logo" class="octicon octicon-code"></span> with <span id="heart" class="octicon octicon-heart"></span> by Pedro Santos</p>
   </footer>
 
   <!-- Back to top Button -->
@@ -396,7 +395,6 @@
             jQuery('.back-to-top').fadeOut(duration);
           }
         });
-
         jQuery('.back-to-top').click(function(event) {
           event.preventDefault();
           jQuery('html, body').animate({

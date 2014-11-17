@@ -104,7 +104,6 @@ span.text-content span {
 .project-info p {
   margin: 5pt;
 }
-
 .project-info a:hover {
   color: #20222e;
   -webkit-transform: rotate(360deg);
@@ -463,11 +462,8 @@ h4 {
 #heart {
   color: #9b3f3f;
 }
-#html-logo{
-	color: rgb(195, 70, 13);
-}
-#css-logo{
-	color: rgb(75, 108, 154);
+#code-logo{
+  color: #e2e2e2;
 }
 footer p {
   margin: 0;
