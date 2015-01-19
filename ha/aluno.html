@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sistema de Gestão de Estágios e Projetos</title>
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<link rel="stylesheet" href="octicons/octicons.css">
+	<link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>
+</head>
+<body>
+	<header>
+	  <div class="col-logo">
+		<a href="aluno.html"><img id="logo-estig" src="img/logo_estig.png" alt="Logo ESTIG"></a>
+		</div>
+		<div class="header-col-center">
+			<h1>Sistema de Gestão de Estágios e Projetos</h1>
+			<h2>Licenciatura em Engenharia Informática</h2>
+		</div>
+		<div class="col-zoom">
+			Tamanho da letra:
+		<input type="button" value="A+" onclick="zoomIn()" class="btn-confirm">
+		<input type="button" value="A-" onclick="zoomOut()" class="btn-confirm">
+		</div>
+	</header>
+	
+	<nav>
+		 <ul id="nav-bar">
+		  <li><a id="bar-start" onclick="home();"><span class="octicon octicon-home"></span> Início</a></li>
+		  <li>
+		  	<a href="#"><span class="octicon octicon-file-text"></span> Meu Estágio/Projeto</a>
+		  		<ul>
+            <li><a id="bar-prorr" onclick="pedirProrrogacao();">Pedir Prorrogação</a></li>
+            <li><a href="#">Concluir Estágio/Projeto</a></li>
+           </ul>
+		  </li>
+		  <li><a href="#"><span class="octicon octicon-search"></span> Ver Propostas</a></li>
+		  <li><a href="#"><span class="octicon octicon-comment"></span> Mensagens</a></li>
+		  <li><a href="#"><span class="octicon octicon-person"></span> Perfil</a></li>
+		  <li><a href="#"><span class="octicon octicon-file-directory"></span> Documentação Útil</a></li>
+		</ul> 
+	</nav>
+
+	<section>
+		<div class="col-left">
+			<div class="border-col">
+
+			<div id="alertas">
+				<h2>Alertas</h2>
+				<p>Está inscrito no Estágio: "Agência Web - Design Binário"</p>
+				<p>Data de início: 02/11/2014</p>
+				<p class="res-aling">Data prevista de conclusão: 06/02/2015 -</p>
+				<p id="remaining" class="res-aling">73 dias restantes</p>
+				<p>Docente Orientador: Gonçalo Lampreia</p>
+			</div>
+
+			<div id="prorrogacao">
+				<h2>Pedido de prorrogação da data de entrega</h2>
+				<form action="javascript:prorrogacaoSucesso();">
+					<p>Indique o motivo pela qual deseja pedir o adiamento da data de entrega do seu projeto/estágio:</p>
+					<textarea placeholder="Justificação" id="message" required></textarea><br>
+					Indique uma nova data:
+					<input class="input-date" type="date" required><br>
+					<div class="btn-right-align">
+						<button id="btn-entrar" class="btn-confirm" type="submit">Confirmar</button>
+						<button onclick="cancelAction();" class="btn-confirm" type="button">Cancelar</button>
+					</div>
+				</form>
+			</div>
+
+			<div id="sucesso-prorrogacao">
+				<h2>Pedido de prorrogação efetuado com sucesso <span class="mega-octicon octicon-check"></span></h2>
+				<p>O seu pedido de prorrogação será avaliado e será notificado acerca das alterações efetuadas em relação ao seu projeto.</p>
+				<div class="btn-right-align">
+					<button onclick="home();" class="btn-confirm" type="button">Voltar ao início</button>
+				</div>
+			</div>
+
+			<div id="action-cancel">
+				<h2>Acção cancelada <span class="mega-octicon octicon-x"></span></h2>
+				<p>A sua acção foi cancelada com sucesso e as alterações efetuadas anteriormente não foram salvas.</p>
+				<div class="btn-right-align">
+					<button onclick="home();" class="btn-confirm" type="button">Voltar ao início</button>
+				</div>
+			</div>
+			</div>
+		</div>
+		
+		<div class="col-right">
+			<div class="border-col">
+				<img id="profile-photo" src="img/aluno.png" alt="Fotografia do Aluno">
+				<h3>Bem vindo,</h3>
+				<p>Pedro Santos</p>
+				<p>Aluno nº 12551</p>
+				<p>Licenciatura em Engenharia Informática</p>
+				<button id="btn-logout" class="btn-confirm" type="button">Sair</button>
+			</div>
+		</div>
+	</section>
+	
+
+	<footer>
+		<h4>Links úteis</h4>
+		 <ul id="link-footer">
+		 	<li><a href="https://www.ipbeja.pt/Paginas/default.aspx" target="_blank">IPBeja</a></li>
+		  <li><a href="https://portal.ipbeja.pt/netpa/page" target="_blank">Portal IPBeja</a></li>
+		  <li><a href="http://cms.ipbeja.pt/" target="_blank">Moodle IPBeja</a></li>
+		  <li><a href="https://www.ipbeja.pt/servicos/giva/Paginas/default.aspx" target="_blank">GIVA</a></li>
+		</ul> 
+	</footer>
+
+<!-- load js -->
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/dataTables.js" type="text/javascript"></script>
+<script src="js/functions.js" type="text/javascript"></script>
+
+</body>
+</html>
