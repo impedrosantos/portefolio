@@ -1,17 +1,44 @@
-var aluno = "911912551";
-var pass_aluno = "aluno";
-var orientador = "orientador";
-var pass_orientador = "estig";
-var coordenador = "coordenador";
-var pass_coordenador = "admin";
+var username;
+var password;
 var trd;
 var proposta;
 var fontSize = 1;
+var http_request = false;
+var xml_tree;
 
+function loadXML(xmlFile) {
+
+  http_request = false;
+  if (window.XMLHttpRequest) { // Mozilla, Safari,...
+    http_request = new window.XMLHttpRequest();
+
+  } else if (window.ActiveXObject) { // InternetExplorer
+    try {
+      http_request = new ActiveXObject("Microsoft.XMLHTTP");
+    } catch (e) {
+      try {
+        http_request = new ActiveXObject("Microsoft.XMLHTTP");
+      } catch (e) {}
+    }
+  }
+
+  if (!http_request) {
+    alert('Giving up :( Cannot create an XMLHTTP instance');
+    return false;
+  }
+
+  http_request.open("GET", xmlFile, false);
+
+  http_request.send(null);
+  xml_tree = http_request.responseXML;
+}
+
+//ready functions
 $(document).ready(function() {
   hide();
   enterToSubmit();
-  $("#btn-entrar").click(function() {
+
+  $("#btn-entrar").click(function(){
     login();
   });
   $("#btn-logout").click(function() {
@@ -62,11 +89,6 @@ function tableClickAction() {
 
     proposta = $(trd).find("td").first().text();
     $("#proposta-seleccionada").append(proposta);
-    /*$(trd).find("td").each(function(){
-						if($(this).index() == 0)
-							console.log($(this).text())
-					});*/
-
   });
 }
 
@@ -124,20 +146,24 @@ function mostrarProposta2() {
 }
 
 function login() {
-  var username = $("#username").val();
-  var password = $("#password").val();
-  if (username == aluno && password == pass_aluno) {
+  username = $("#username").val();
+  password = $("#password").val();
+
+  xmlDoc = loadXML('xml/logins.xml');
+
+    xUser = xml_tree.getElementsByTagName("USER");
+    xPass = xml_tree.getElementsByTagName("PASS");
+    xUrl = xml_tree.getElementsByTagName("PAGE");
+
+    for(i = 0; i<xUser.length; i++){
+      yUser = xUser[i].childNodes[0].nodeValue;
+      yPass = xPass[i].childNodes[0].nodeValue;
+      yUrl = xUrl[i].childNodes[0].nodeValue;
+
+  if (username == yUser && password == yPass) {
     $("#username").val("");
     $("#password").val("");
-    window.location.href = "aluno.html";
-  } else if (username == orientador && password == pass_orientador) {
-    $("#username").val("");
-    $("#password").val("");
-    window.location.href = "orientador.html";
-  } else if (username == coordenador && password == pass_coordenador) {
-    $("#username").val("");
-    $("#password").val("");
-    window.location.href = "coordenador.html";
+    window.location = yUrl;
   } else if (username == "" && password == "") {
     $("#login-error").text("Preencha todos os campos!");
     $("#login-error").fadeIn();
@@ -163,6 +189,7 @@ function login() {
     $("#login-error").text("Nome de utilizador ou senha incorretos!");
     $("#login-error").fadeIn();
   };
+}
 }
 
 function logout() {

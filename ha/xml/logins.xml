@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UTILIZADORES>
+   <UTILIZADOR>
+      <PASS>aluno</PASS>
+      <USER>911912551</USER>
+      <PAGE>aluno.html</PAGE>
+   </UTILIZADOR>
+   <UTILIZADOR>
+      <PASS>estig</PASS>
+      <USER>orientador</USER>
+      <PAGE>orientador.html</PAGE>
+   </UTILIZADOR>
+   <UTILIZADOR>
+      <PASS>admin</PASS>
+      <USER>coordenador</USER>
+      <PAGE>coordenador.html</PAGE>
+   </UTILIZADOR>
+</UTILIZADORES>
