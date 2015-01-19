@@ -92,6 +92,7 @@ de Ecrã"</p>
 
 			<div id="nomear-juri-second-page">
 				<h2 id="proposta-seleccionada">Nomear Júri -  </h2>
+				<form action="javascript:nomearJuriSucesso();">
 				<p>Indique o Presidente do júri:</p>
 				<div id="menuForm" class="nome-docente">
 					<select id="select1" class="listbox" size="5">
@@ -129,15 +130,21 @@ de Ecrã"</p>
 						<p>Breve introdução acerca do docente</p>
 					</div>
 				</div>
+				<div id="nova-data-orientador">
+					Indique a data prevista para a prova pública:
+					<input id="finish-date" type="date" class="btn-file" required><br>
+				</div>
 				<div class="btn-right-align-orientador">
-						<button id="btn-entrar" onclick="nomearJuriSucesso();" 	class="btn-confirm" type="submit">Confirmar</button>
+						<button id="btn-entrar" class="btn-confirm" type="submit">Confirmar</button>
 						<button onclick="cancelAction();" class="btn-confirm" type="button">Cancelar</button>
 					</div>
+					</form>
 			</div>
 
 			<div id="sucesso-nomeacao">
 				<h2>Júri nomeado com sucesso <span class="mega-octicon octicon-check"></span></h2>
 				<p>A sua nomeação do júri, presidente e arguente foi efetuada com sucesso.</p>
+				<p id="limit-date"></p>
 				<div class="btn-right-align">
 					<button onclick="home();" class="btn-confirm" type="button">Voltar ao início</button>
 				</div>

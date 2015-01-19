@@ -227,6 +227,7 @@ function nomearJuriLast() {
 function nomearJuriSucesso(){
 	resetContent();
 	$("#sucesso-nomeacao").show();
+  appendDateNomearJuri();
 }
 
 function cancelAction() {
@@ -237,6 +238,11 @@ function cancelAction() {
 function appendDate() {
   var dateValue = document.getElementById("finish-date").value;
   $("#limit-date").append('<p id="confirmed-date">Data final para votação: </p>');
+  $("#confirmed-date").append(dateValue);
+}
+function appendDateNomearJuri() {
+  var dateValue = document.getElementById("finish-date").value;
+  $("#limit-date").append('<p id="confirmed-date">Data prevista para a prova pública: </p>');
   $("#confirmed-date").append(dateValue);
 }
 
