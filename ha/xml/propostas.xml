@@ -1,12 +1,15 @@
-<?xml version='1.0'?>
+<?xml version='1.0' ?>
 
 <CATALOG>
-	<PROPOSAL>
-		<TITLE>Agência Web - Design Binário</TITLE>
-		<INTRO>A Design Binário é uma Agência Web especialista no desenvolvimento de soluções digitais para qualquer tipo de plataforma Web ou Mobile, sedeada em Portugal. Desde 2005 que o nosso objetivo é a utilização da Web como Ferramenta, onde podemos expandir e gerir os negócios de forma completa, impulsionando assim a flexibilidade, rapidez e organização. O estágio é um complemento à formação académica, que garante uma correta aplicação dos conhecimentos adquiridos ao longo dos anos. Essencialmente trabalhamos em PHP, Mysql, Javascript, Jquery.</INTRO>
-		<GOALS>O Objetivo do estágio é garantir uma correta integração do Miguel no mercado de trabalho, integrado no ambiente de uma empresa e no ritmo de trabalho que hoje este mercado exige. Conhecimento do método de desenvolvimento Scrum, recorrendo a milestones e fases de aprovação, através do qual tem de aliar o ritmo de trabalho com a qualidade dos seus commits.</GOALS>
-		<PHASING>O estágio estará dividido em 3 planos</PHASING>
-		<TECHNOLOGIES>PHP</TECHNOLOGIES>
-		<BIBLIOGRAPHY>Desenvolvimento de Aplicações em PHP - Frederico Tavares - FCA - 9789727227488</BIBLIOGRAPHY>
-	</PROPOSAL>
+  <PROPOSAL>
+    <TITLE>Agência Web - Design Binário</TITLE>
+    <INTRO>A Design Binário é uma Agência Web especialista no desenvolvimento de soluções digitais para qualquer tipo de plataforma Web ou Mobile, sedeada em Portugal. Desde 2005 que o nosso objetivo é a utilização da Web como Ferramenta, onde podemos expandir
+      e gerir os negócios de forma completa, impulsionando assim a flexibilidade, rapidez e organização. O estágio é um complemento à formação académica, que garante uma correta aplicação dos conhecimentos adquiridos ao longo dos anos. Essencialmente
+      trabalhamos em PHP, Mysql, Javascript, Jquery.</INTRO>
+    <GOALS>O Objetivo do estágio é garantir uma correta integração do Miguel no mercado de trabalho, integrado no ambiente de uma empresa e no ritmo de trabalho que hoje este mercado exige. Conhecimento do método de desenvolvimento Scrum, recorrendo a milestones
+      e fases de aprovação, através do qual tem de aliar o ritmo de trabalho com a qualidade dos seus commits.</GOALS>
+    <PHASING>O estágio estará dividido em 3 planos</PHASING>
+    <TECHNOLOGIES>PHP</TECHNOLOGIES>
+    <BIBLIOGRAPHY>Desenvolvimento de Aplicações em PHP - Frederico Tavares - FCA - 9789727227488</BIBLIOGRAPHY>
+  </PROPOSAL>
 </CATALOG>

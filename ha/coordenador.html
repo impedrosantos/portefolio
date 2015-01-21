@@ -1,120 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Sistema de Gestão de Estágios e Projetos</title>
-	<link rel="stylesheet" href="css/styles.css" type="text/css">
-	<link rel="stylesheet" href="octicons/octicons.css">
-	<link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>
+  <meta charset="UTF-8">
+  <title>Sistema de Gestão de Estágios e Projetos</title>
+  <!-- Ficheiro de estilos css -->
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <!-- GitHub octicons -->
+  <link rel="stylesheet" href="octicons/octicons.css">
+  <!-- Favicon - logotipo da estig -->
+  <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
 </head>
+
 <body>
-	<header>
-	  <div class="col-logo">
-		<a href="coordenador.html"><img id="logo-estig" src="img/logo_estig.png" alt="Logo ESTIG"></a>
-		</div>
-		<div class="header-col-center">
-			<h1>Sistema de Gestão de Estágios e Projetos</h1>
-			<h2>Licenciatura em Engenharia Informática</h2>
-		</div>
-		<div class="col-zoom">
-			Tamanho da letra:
-		<input type="button" value="A+" onclick="zoomIn()" class="btn-confirm">
-		<input type="button" value="A-" onclick="zoomOut()" class="btn-confirm">
-		</div>
-	</header>
-	
-	<nav>
-		 <ul id="nav-bar">
-		  <li><a id="bar-start" onclick="home();"><span class="octicon octicon-home"></span> Início</a></li>
-		  <li>
-		  	<a href="#"><span class="octicon octicon-file-text"></span> Propostas em votação</a>
-		  		<ul>
-            <li><a id="bar-proposta" onclick="propostaVotacao();">Nova votação</a></li>
-            <li><a href="#">Votações em curso</a></li>
-            <li><a href="#">Votações já terminadas</a></li>
-           </ul>
-		  </li>
-		  <li><a href="#"><span class="octicon octicon-diff-added"></span> Nova proposta</a></li>
-		  <li><a href="#"><span class="octicon octicon-sync"></span> Atualizar propostas</a></li>
-		  <li><a href="#"><span class="octicon octicon-comment"></span> Mensagens</a></li>
-		  <li><a href="#"><span class="octicon octicon-person"></span> Perfil</a></li>
-		  <li><a href="#"><span class="octicon octicon-file-directory"></span> Documentação Útil</a></li>
-		</ul> 
-	</nav>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="col-logo">
+      <a href="coordenador.html">
+        <img id="logo-estig" src="img/logo_estig.png" alt="Logo ESTIG">
+      </a>
+    </div>
+    <div class="header-col-center">
+      <h1>Sistema de Gestão de Estágios e Projetos</h1>
+      <h2>Licenciatura em Engenharia Informática</h2>
+    </div>
+    <!-- Alterar o tamanho da letra da página -->
+    <div class="col-zoom">
+      Tamanho da letra:
+      <input type="button" value="A+" onclick="zoomIn()" class="btn-confirm">
+      <input type="button" value="A-" onclick="zoomOut()" class="btn-confirm">
+    </div>
+  </header>
 
-	<section>
-		<div class="col-left">
-			<div class="border-col">
+  <!-- barra de navegacao -->
+  <nav>
+    <ul id="nav-bar">
+      <li>
+        <a id="bar-start" onclick="home();">
+          <span class="octicon octicon-home"></span> Início</a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="octicon octicon-file-text"></span> Propostas em votação</a>
+        <ul>
+          <li><a id="bar-proposta" onclick="propostaVotacao();">Nova votação</a>
+          </li>
+          <li><a href="#">Votações em curso</a>
+          </li>
+          <li><a href="#">Votações já terminadas</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <span class="octicon octicon-diff-added"></span> Nova proposta</a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="octicon octicon-sync"></span> Atualizar propostas</a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="octicon octicon-comment"></span> Mensagens</a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="octicon octicon-person"></span> Perfil</a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="octicon octicon-file-directory"></span> Documentação Útil</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- seccao principal -->
+  <section>
+    <div class="col-left">
+      <div class="border-col">
 
-				<div id="alertas">
-					<h2>Alertas</h2>
-					<p>Existem 4 votações em curso.</p>
-				<p>Tem 2 mensagens pendentes.</p>
-				</div>
+        <!-- Alertas iniciais -->
+        <div id="alertas">
+          <h2>Alertas</h2>
+          <p>Existem 4 votações em curso.</p>
+          <p>Tem 2 mensagens pendentes.</p>
+        </div>
 
-				<div id="disponibilizar-proposta">
-					<h2>Disponibilizar nova proposta para votação</h2>
-					<form action="javascript:propostaVotacaoSucesso();">
-					Proposta para votação* (.pdf/.zip): 
-					<input type="file" class="btn-file" value="Carregar ficheiro" required>
-					<br><br>
-					Prazo para o final da Votação*:
-					<input id="finish-date" type="date" class="btn-file" required><br>
-					<p id="light-text">*campos obrigatórios</p>
-					<div class="btn-right-align">
-						<button id="btn-entrar" class="btn-confirm" type="submit">Confirmar</button>
-						<button onclick="cancelAction();" class="btn-confirm" type="button">Cancelar</button>
-					</div>
-					</form>
-				</div>
+        <!-- Disponibilizar propostas -->
+        <div id="disponibilizar-proposta">
+          <h2>Disponibilizar nova proposta para votação</h2>
+          <form action="javascript:propostaVotacaoSucesso();">
+            Proposta para votação* (.pdf/.zip):
+            <input type="file" class="btn-file" value="Carregar ficheiro" required>
+            <br>
+            <br> Prazo para o final da Votação*:
+            <input id="finish-date" type="date" class="btn-file" required>
+            <br>
+            <p id="light-text">*campos obrigatórios</p>
+            <div class="btn-right-align">
+              <button id="btn-entrar" class="btn-confirm" type="submit">Confirmar</button>
+              <button onclick="cancelAction();" class="btn-confirm" type="button">Cancelar</button>
+            </div>
+          </form>
+        </div>
 
-				<div id="sucesso-proposta-votacao">
-				<h2>Proposta para votação submetida com sucesso <span class="mega-octicon octicon-check"></span></h2>
-				<p>A sua proposta será votada pelos docentes da área de informática e será notificado acerca do resultado no dia indicado: </p>
-				<p id="limit-date"></p>
-				<div class="btn-right-align">
-					<button onclick="home();" class="btn-confirm" type="button">Voltar ao início</button>
-				</div>
-			</div>
+        <!-- Alerta sucesso -->
+        <div id="sucesso-proposta-votacao">
+          <h2>Proposta para votação submetida com sucesso
+            <span class="mega-octicon octicon-check"></span>
+          </h2>
+          <p>A sua proposta será votada pelos docentes da área de informática e será notificado acerca do resultado no dia indicado: </p>
+          <p id="limit-date"></p>
+          <div class="btn-right-align">
+            <button onclick="home();" class="btn-confirm" type="button">Voltar ao início</button>
+          </div>
+        </div>
 
-				<div id="action-cancel">
-				<h2>Acção cancelada <span class="mega-octicon octicon-x"></span></h2>
-				<p>A sua acção foi cancelada com sucesso e as alterações efetuadas anteriormente não foram salvas.</p>
-				<div class="btn-right-align">
-					<button onclick="home();" class="btn-confirm" type="button">Voltar ao início</button>
-				</div>
-			</div>
+        <!-- Alerta cancelar -->
+        <div id="action-cancel">
+          <h2>Acção cancelada
+            <span class="mega-octicon octicon-x"></span>
+          </h2>
+          <p>A sua acção foi cancelada com sucesso e as alterações efetuadas anteriormente não foram salvas.</p>
+          <div class="btn-right-align">
+            <button onclick="home();" class="btn-confirm" type="button">Voltar ao início</button>
+          </div>
+        </div>
 
-			</div>
-		</div>
-		
-		<div class="col-right">
-			<div class="border-col">
-				<img id="profile-photo" src="img/coordenador.png" alt="Fotografia do Coordenador">
-				<h3>Bem vindo,</h3>
-				<p>Nelson Miguel Rodrigues Pinto</p>
-				<p>Coordenador de Estágios e Projetos</p>
-				<p>Licenciatura em Engenharia Informática</p>
-				<button id="btn-logout" class="btn-confirm" type="button">Sair</button>
-			</div>
-		</div>
-	</section>
-	
+      </div>
+    </div>
+    <!-- Informacoes relativas ao coordenador -->
+    <div class="col-right">
+      <div class="border-col">
+        <img id="profile-photo" src="img/coordenador.png" alt="Fotografia do Coordenador">
+        <h3>Bem vindo,</h3>
+        <p>José Pinto</p>
+        <p>Coordenador de Estágios e Projetos</p>
+        <p>Licenciatura em Engenharia Informática</p>
+        <button id="btn-logout" class="btn-confirm" type="button">Sair</button>
+      </div>
+    </div>
+  </section>
 
-	<footer>
-		<h4>Links úteis</h4>
-		 <ul id="link-footer">
-		 	<li><a href="https://www.ipbeja.pt/Paginas/default.aspx" target="_blank">IPBeja</a></li>
-		  <li><a href="https://portal.ipbeja.pt/netpa/page" target="_blank">Portal IPBeja</a></li>
-		  <li><a href="http://cms.ipbeja.pt/" target="_blank">Moodle IPBeja</a></li>
-		  <li><a href="https://www.ipbeja.pt/servicos/giva/Paginas/default.aspx" target="_blank">GIVA</a></li>
-		</ul> 
-	</footer>
+  <!-- footer -->
+  <footer>
+    <h4>Links úteis</h4>
+    <ul id="link-footer">
+      <li><a href="https://www.ipbeja.pt/Paginas/default.aspx" target="_blank">IPBeja</a>
+      </li>
+      <li><a href="https://portal.ipbeja.pt/netpa/page" target="_blank">Portal IPBeja</a>
+      </li>
+      <li><a href="http://cms.ipbeja.pt/" target="_blank">Moodle IPBeja</a>
+      </li>
+      <li><a href="https://www.ipbeja.pt/servicos/giva/Paginas/default.aspx" target="_blank">GIVA</a>
+      </li>
+    </ul>
+  </footer>
 
-<!-- load js -->
-<script src="js/jquery.js" type="text/javascript"></script>
-<script src="js/dataTables.js" type="text/javascript"></script>
-<script src="js/functions.js" type="text/javascript"></script>
+  <!-- load js -->
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/dataTables.js" type="text/javascript"></script>
+  <script src="js/functions.js" type="text/javascript"></script>
 
 </body>
+
 </html>

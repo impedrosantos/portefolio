@@ -1,6 +1,17 @@
+/*
+  AUTOR: Pedro Santos 12551
+  2014 - 2015
+*/
+
+/*
+  Inicializacao das variaveis
+*/
 var http_request = false;
 var xml_tree;
 
+/*
+  Carregar xml
+*/
 function loadXML(xmlFile) {
 
   http_request = false;
@@ -28,6 +39,9 @@ function loadXML(xmlFile) {
   xml_tree = http_request.responseXML;
 }
 
+/*
+  Mostra na pagina principal os campos de uma proposta, lidos a partir de um ficheiro xml: propostas.xml
+*/
 function loadSelect() {
   xmlDoc = loadXML('xml/propostas.xml');
 

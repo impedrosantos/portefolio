@@ -1,192 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Sistema de Gestão de Estágios e Projetos</title>
-	<link rel="stylesheet" href="css/styles.css" type="text/css">
-	<link rel="stylesheet" href="octicons/octicons.css">
-	<link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>
+  <meta charset="UTF-8">
+  <title>Sistema de Gestão de Estágios e Projetos</title>
+  <!-- Ficheiro de estilos css -->
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <!-- GitHub octicons -->
+  <link rel="stylesheet" href="octicons/octicons.css">
+  <!-- Favicon - logotipo da estig -->
+  <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
 </head>
+
 <body>
-	<header>
-	  <div class="col-logo">
-		<a href="orientador.html"><img id="logo-estig" src="img/logo_estig.png" alt="Logo ESTIG"></a>
-		</div>
-		<div class="header-col-center">
-			<h1>Sistema de Gestão de Estágios e Projetos</h1>
-			<h2>Licenciatura em Engenharia Informática</h2>
-		</div>
-		<div class="col-zoom">
-			Tamanho da letra:
-		<input type="button" value="A+" onclick="zoomIn()" class="btn-confirm">
-		<input type="button" value="A-" onclick="zoomOut()" class="btn-confirm">
-		</div>
-	</header>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="col-logo">
+      <a href="orientador.html">
+        <img id="logo-estig" src="img/logo_estig.png" alt="Logo ESTIG">
+      </a>
+    </div>
+    <div class="header-col-center">
+      <h1>Sistema de Gestão de Estágios e Projetos</h1>
+      <h2>Licenciatura em Engenharia Informática</h2>
+    </div>
+    <!-- Alterar o tamanho da letra da página -->
+    <div class="col-zoom">
+      Tamanho da letra:
+      <input type="button" value="A+" onclick="zoomIn()" class="btn-confirm">
+      <input type="button" value="A-" onclick="zoomOut()" class="btn-confirm">
+    </div>
+  </header>
 
-	<nav>
-		 <ul id="nav-bar">
-		  <li><a id="bar-start" onclick="home();"><span class="octicon octicon-home"></span> Início</a></li>
-		  <li><a id="bar-pe-orientar" onclick="projOrientar();"><span class="octicon octicon-file-text"></span>Estágios/Projetos a Orientar</a></li>
-		  <li><a href="#"><span class="octicon octicon-diff-added"></span> Nova Proposta</a></li>
-		  <li><a href="#"><span class="octicon octicon-comment"></span> Mensagens</a></li>
-		  <li><a href="#"><span class="octicon octicon-person"></span> Perfil</a></li>
-		  <li><a href="#"><span class="octicon octicon-file-directory"></span> Documentação Útil</a></li>
-		</ul>
-	</nav>
+  <!-- barra de navegacao -->
+  <nav>
+    <ul id="nav-bar">
+      <li>
+        <a id="bar-start" onclick="home();">
+          <span class="octicon octicon-home"></span> Início</a>
+      </li>
+      <li>
+        <a id="bar-pe-orientar" onclick="projOrientar();">
+          <span class="octicon octicon-file-text"></span>Estágios/Projetos a Orientar</a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="octicon octicon-diff-added"></span> Nova Proposta</a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="octicon octicon-comment"></span> Mensagens</a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="octicon octicon-person"></span> Perfil</a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="octicon octicon-file-directory"></span> Documentação Útil</a>
+      </li>
+    </ul>
+  </nav>
 
-	<section>
-		<div class="col-left">
-			<div class="border-col">
+  <!-- seccao principal -->
+  <section>
+    <div class="col-left">
+      <div class="border-col">
 
-			<div id="alertas">
-				<h2>Alertas</h2>
-				<p>É o docente orientador do projeto: "Malware para Identificação de Sistema e Captura
-de Ecrã"</p>
-				<p>Data de início: 24/10/2014</p>
-				<p class="res-aling">Data prevista de conclusão: 06/02/2015 -</p>
-				<p id="remaining-orange" class="res-aling">21 dias restantes</p>
-				<p>Aluno a orientar: Neuza Figueira</p>
-			</div>
-
-			<div id="nomear-juri">
-				<h2>Estágios/Projetos a orientar:</h2>
-				<p>Seleccione um estágio ou projeto existente na seguinte tabela para nomear o respetivo juri.*</p>
-				<table id="table-construct">
-        <thead>
-            <tr>
+        <!-- Alertas iniciais -->
+        <div id="alertas">
+          <h2>Alertas</h2>
+          <p>É o docente orientador do projeto: "Malware para Identificação de Sistema e Captura de Ecrã"</p>
+          <p>Data de início: 24/10/2014</p>
+          <p class="res-aling">Data prevista de conclusão: 06/02/2015 -</p>
+          <p id="remaining-orange" class="res-aling">21 dias restantes</p>
+          <p>Aluno a orientar: Neuza Figueira</p>
+        </div>
+        <!-- Criacao de uma tabela com linhas seleccionaveis -->
+        <div id="nomear-juri">
+          <h2>Estágios/Projetos a orientar:</h2>
+          <p>Seleccione um estágio ou projeto existente na seguinte tabela para nomear o respetivo juri.*</p>
+          <table id="table-construct">
+            <thead>
+              <tr>
                 <th>Título</th>
                 <th>Tipo</th>
                 <th>Aluno</th>
-            </tr>
-        </thead>
+              </tr>
+            </thead>
 
-        <tbody>
-            <tr>
-            	<td>Segurança em Redes</td>
-            	<td>Projeto</td>
+            <tbody>
+              <tr>
+                <td>Segurança em Redes</td>
+                <td>Projeto</td>
                 <td>Artur Ataíde</td>
-           	</tr>
-            <tr>
+              </tr>
+              <tr>
                 <td>Desenvolvimento orientado para a WEB</td>
                 <td>Estágio</td>
                 <td>Miguel Nobre</td>
-            </tr>
-            <tr>
+              </tr>
+              <tr>
                 <td>EDIA Mobile</td>
                 <td>Estágio</td>
                 <td>André Ventura</td>
-            </tr>
-            <tr>
+              </tr>
+              <tr>
                 <td>Aplicação Android</td>
                 <td>Projeto</td>
                 <td>Emanuel Teixeira</td>
-            </tr>
-        </tbody>
-    </table>
-    <p id="light-text">*campos obrigatórios</p>
-				<div class="btn-right-align">
-						<button id="btn-confirm-table" onclick="nomearJuriLast();" class="btn-confirm" type="submit">Confirmar</button>
-						<button onclick="cancelAction();" class="btn-confirm" type="button">Cancelar</button>
-				</div>
-			</div>
+              </tr>
+            </tbody>
+          </table>
+          <p id="light-text">*campos obrigatórios</p>
+          <div class="btn-right-align">
+            <button id="btn-confirm-table" onclick="nomearJuriLast();" class="btn-confirm" type="submit">Confirmar</button>
+            <button onclick="cancelAction();" class="btn-confirm" type="button">Cancelar</button>
+          </div>
+        </div>
 
-			<div id="nomear-juri-second-page">
-				<h2 id="proposta-seleccionada">Nomear Júri -  </h2>
-				<form action="javascript:nomearJuriSucesso();">
-				<p>Indique o Presidente do júri:</p>
-				<div id="menuForm" class="nome-docente">
-					<select id="select1" class="listbox" size="5">
-					<option value="img/empty.png" selected="selected">Indique o Presidente</option>
-				  <option value="img/docente.png">José Carrasco</option>
-				  <option value="img/coordenador.png">Benedita Geraldes</option>
-				  <option value="img/docente_2.png">Renato Alexandre</option>
-				</select>
-				</div>
+        <!-- Indicar o presidente do juri e o arguente -->
+        <div id="nomear-juri-second-page">
+          <h2 id="proposta-seleccionada">Nomear Júri - </h2>
+          <form action="javascript:nomearJuriSucesso();">
+            <p>Indique o Presidente do júri:</p>
+            <div id="menuForm" class="nome-docente">
+              <select id="select1" class="listbox" size="5">
+                <option value="img/empty.png" selected="selected">Indique o Presidente</option>
+                <option value="img/docente.png">José Carrasco</option>
+                <option value="img/coordenador.png">Benedita Geraldes</option>
+                <option value="img/docente_2.png">Renato Alexandre</option>
+              </select>
+            </div>
+            <!-- informacao acerca do docente -->
+            <div class="info-docente">
+              <div id="info-presidente">
+                <img src="img/empty.png" alt="Nenhum Arguente Seleccionado">
+              </div>
+              <div id="info-text-presidente">
+                <p>Breve introdução acerca do docente</p>
+              </div>
+            </div>
 
-				<div class="info-docente">
-					<div id="info-presidente">
-						<img src="img/empty.png" alt="Nenhum Arguente Seleccionado">
-					</div>
-					<div id="info-text-presidente">
-					<p>Breve introdução acerca do docente</p>
-					</div>
-				</div>
+            <p id="separator-block">Indique o Arguente do júri:</p>
+            <div class="nome-docente">
+              <select id="select2" class="listbox" size="5">
+                <option value="img/empty.png" selected="selected">Indique o Arguente</option>
+                <option value="img/docente.png">José Carrasco</option>
+                <option value="img/docente_3.png">Andreia Pereira</option>
+                <option value="img/docente_2.png">Renato Alexandre</option>
+              </select>
+            </div>
 
-				<p id="separator-block">Indique o Arguente do júri:</p>
-				<div class="nome-docente">
-				  <select id="select2" class="listbox" size="5">
-					<option value="img/empty.png" selected="selected">Indique o Arguente</option>
-				  <option value="img/docente.png">José Carrasco</option>
-				  <option value="img/docente_3.png">Andreia Pereira</option>
-				  <option value="img/docente_2.png">Renato Alexandre</option>
-				</select>
-				</div>
+            <!-- informacao acerca do docente -->
+            <div class="info-docente">
+              <div id="info-arguente">
+                <img src="img/empty.png" alt="Nenhum Arguente Seleccionado">
+              </div>
+              <div id="info-text-arguente">
+                <p>Breve introdução acerca do docente</p>
+              </div>
+            </div>
+            <div id="nova-data-orientador">
+              Indique a data prevista para a prova pública:
+              <input id="finish-date" type="date" class="btn-file" required>
+              <br>
+            </div>
+            <div class="btn-right-align-orientador">
+              <button id="btn-entrar" class="btn-confirm" type="submit">Confirmar</button>
+              <button onclick="cancelAction();" class="btn-confirm" type="button">Cancelar</button>
+            </div>
+          </form>
+        </div>
+        <!-- nomeacao efetuada com sucesso -->
+        <div id="sucesso-nomeacao">
+          <h2>Júri nomeado com sucesso
+            <span class="mega-octicon octicon-check"></span>
+          </h2>
+          <p>A sua nomeação do júri, presidente e arguente foi efetuada com sucesso.</p>
+          <p id="limit-date"></p>
+          <div class="btn-right-align">
+            <button onclick="home();" class="btn-confirm" type="button">Voltar ao início</button>
+          </div>
+        </div>
 
-				<div class="info-docente">
-					<div id="info-arguente">
-						<img src="img/empty.png" alt="Nenhum Arguente Seleccionado">
-					</div>
-					<div id="info-text-arguente">
-						<p>Breve introdução acerca do docente</p>
-					</div>
-				</div>
-				<div id="nova-data-orientador">
-					Indique a data prevista para a prova pública:
-					<input id="finish-date" type="date" class="btn-file" required><br>
-				</div>
-				<div class="btn-right-align-orientador">
-						<button id="btn-entrar" class="btn-confirm" type="submit">Confirmar</button>
-						<button onclick="cancelAction();" class="btn-confirm" type="button">Cancelar</button>
-					</div>
-					</form>
-			</div>
+        <!-- Alerta sucesso -->
+        <div id="action-cancel">
+          <h2>Acção cancelada
+            <span class="mega-octicon octicon-x"></span>
+          </h2>
+          <p>A sua acção foi cancelada com sucesso e as alterações efetuadas anteriormente não foram salvas.</p>
+          <div class="btn-right-align-orientador">
+            <button onclick="home();" class="btn-confirm" type="button">Voltar ao início</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-			<div id="sucesso-nomeacao">
-				<h2>Júri nomeado com sucesso <span class="mega-octicon octicon-check"></span></h2>
-				<p>A sua nomeação do júri, presidente e arguente foi efetuada com sucesso.</p>
-				<p id="limit-date"></p>
-				<div class="btn-right-align">
-					<button onclick="home();" class="btn-confirm" type="button">Voltar ao início</button>
-				</div>
-			</div>
+    <!-- Alerta cancelar -->
+    <div class="col-right">
+      <div class="border-col">
+        <img id="profile-photo" src="img/docente.png" alt="Fotografia do Docente">
+        <h3>Bem vindo,</h3>
+        <p>Maria de Vicente</p>
+        <p>Docente Orientador</p>
+        <p>Licenciatura em Engenharia Informática</p>
+        <button id="btn-logout" class="btn-confirm" type="button">Sair</button>
+      </div>
+    </div>
+  </section>
 
-			<div id="action-cancel">
-				<h2>Acção cancelada <span class="mega-octicon octicon-x"></span></h2>
-				<p>A sua acção foi cancelada com sucesso e as alterações efetuadas anteriormente não foram salvas.</p>
-				<div class="btn-right-align-orientador">
-					<button onclick="home();" class="btn-confirm" type="button">Voltar ao início</button>
-				</div>
-			</div>
-			</div>
-		</div>
+  <!-- footer -->
+  <footer>
+    <h4>Links úteis</h4>
+    <ul id="link-footer">
+      <li><a href="https://www.ipbeja.pt/Paginas/default.aspx" target="_blank">IPBeja</a>
+      </li>
+      <li><a href="https://portal.ipbeja.pt/netpa/page" target="_blank">Portal IPBeja</a>
+      </li>
+      <li><a href="http://cms.ipbeja.pt/" target="_blank">Moodle IPBeja</a>
+      </li>
+      <li><a href="https://www.ipbeja.pt/servicos/giva/Paginas/default.aspx" target="_blank">GIVA</a>
+      </li>
+    </ul>
+  </footer>
 
-		<div class="col-right">
-			<div class="border-col">
-				<img id="profile-photo" src="img/docente.png" alt="Fotografia do Docente">
-				<h3>Bem vindo,</h3>
-				<p>Maria de Vicente</p>
-				<p>Docente Orientador</p>
-				<p>Licenciatura em Engenharia Informática</p>
-				<button id="btn-logout" class="btn-confirm" type="button">Sair</button>
-			</div>
-		</div>
-	</section>
-
-
-	<footer>
-		<h4>Links úteis</h4>
-		 <ul id="link-footer">
-		 	<li><a href="https://www.ipbeja.pt/Paginas/default.aspx" target="_blank">IPBeja</a></li>
-		  <li><a href="https://portal.ipbeja.pt/netpa/page" target="_blank">Portal IPBeja</a></li>
-		  <li><a href="http://cms.ipbeja.pt/" target="_blank">Moodle IPBeja</a></li>
-		  <li><a href="https://www.ipbeja.pt/servicos/giva/Paginas/default.aspx" target="_blank">GIVA</a></li>
-		</ul>
-	</footer>
-
-<!-- load js -->
-<script src="js/jquery.js" type="text/javascript"></script>
-<script src="js/dataTables.js" type="text/javascript"></script>
-<script src="js/functions.js" type="text/javascript"></script>
+  <!-- load js -->
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/dataTables.js" type="text/javascript"></script>
+  <script src="js/functions.js" type="text/javascript"></script>
 
 </body>
+
 </html>
