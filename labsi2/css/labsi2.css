@@ -1,0 +1,25 @@
+/*!
+ * Laboratório de Sistemas de Sistemas de Informacao e Interatividade da ESTIG - Beja
+ */
+
+
+body {
+  padding-top: 8em!important;
+  font-family: 'Open Sans', sans-serif!important;
+}
+
+ /*class*/
+
+.navbar-brand{
+  height: 5em!important;
+}
+
+.navbar-nav>li>a {
+  line-height: 5em!important;
+}
+
+ /*id*/
+
+ #main-logo{
+	max-height: 100%;
+ }
