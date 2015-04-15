@@ -1,23 +1,38 @@
 /*!
- * Laboratório de Sistemas de Sistemas de Informacao e Interatividade da ESTIG - Beja
+ * Laboratório de Sistemas de Sistemas de Informacao e Interatividade da ESTIG - IPBeja
  */
 
 
 body {
-  padding-top: 8em!important;
-  font-family: 'Open Sans', sans-serif!important;
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+footer {
+	padding-bottom: 1em;
+  padding-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: center;
 }
 
  /*class*/
 
 .navbar-brand{
-  height: 5em!important;
+  height: 5em !important;
+}
+
+.navbar-nav {
+  line-height: 5em !important;
 }
 
 .navbar-nav>li>a {
-  line-height: 5em!important;
+  padding-top: 2em;
 }
 
+.navbar-nav {
+	text-align: right;
+	padding-top: 1.5em;
+}
  /*id*/
 
  #main-logo{

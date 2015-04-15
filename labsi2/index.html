@@ -1,3 +1,4 @@
+<!-- LabSI2 - 2015 -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,27 +11,19 @@
     <meta name="author" content="">
     
     <title>Isabel Sofia Brito</title>
-
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon">
     <!-- LabSI2 CSS -->
     <link href="css/labsi2.css" rel="stylesheet">
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <style>
-    body {
-        padding-top: 70px;
-        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    }
-    </style>
-
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -40,19 +33,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img id="main-logo" src="img/labsi2-logo.png" alt="LabSI2 Logo"></a>
+                <a class="navbar-brand" href="index.html"><img id="main-logo" src="img/labsi2-logo.png" alt="LabSI2 Logo"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav pull-right">
                     <li>
-                        <a href="#">Sobre</a>
+                        <a href="#" target="_blank" tabindex="1">Docentes</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="#" target="_blank" tabindex="2">Contactos</a>
                     </li>
                     <li>
-                        <a href="#">Contacto</a>
+                        <a href="http://labsi2.ipbeja.pt/" target="_blank" tabindex="3">Sobre o LabSI2</a>
                     </li>
                 </ul>
             </div>
@@ -61,16 +54,21 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Page Content -->
+    <!-- Conteúdo da página -->
     <div class="container">
 
-        <div class="row">
-          <div class="col-lg-12">
+        <div class="row  row-fluid">
+          <div class="col-md-12">
             <h1>Isabel Sofia Brito</h1>
                 <hr>
             </div>
-            <div class="col-sm-9 text-justify">
-              
+
+            <!-- fotografia do docente-->
+            <div class="col-md-6 col-md-push-6 text-center">
+                <img class="img-profile" src="img/isb.jpg" alt="Fotografia do docente">
+            </div>
+
+            <div class="col-md-6 col-md-pull-6 text-justify">
                 <h2 class="lead">Dados Biográficos</h2>
                 <p>Nasci na Venezuela, onde vivi até os 16 anos. Nasci no meio de uma família pouco numerosa de origem algarvia. Fui "exportada" para Portugal, mais especificamente para a cidade de Coimbra onde conclui a Licenciatura em Engenharia Informática, da Faculdade de Ciências da Universidade de Coimbra.
                 <br>
@@ -95,6 +93,7 @@
                 <li><a href="https://www.ipbeja.pt/cursos/estig-ei/Documents/Programas/9119-FSI-pt.html" target="_blank">Fundamentos de Sistemas de Informação</a></li>
                 <li><a href="https://www.ipbeja.pt/cursos/estig-ei/Documents/Programas/9119-BD2-pt.html" target="_blank">Bases de dados II</a></li>
                 <li><a href="https://www.ipbeja.pt/cursos/estig-ei/Documents/Programas/9119-ES-pt.html" target="_blank">Engenharia de Software</a></li>
+                <li><a href="https://www.flickr.com/photos/40478366@N08/7995320667/in/set-72157624001892995" target="_blank">Segurança em Sistemas de Informação</a></li>
                 </ul>
                 <br>
                 
@@ -112,15 +111,16 @@
                 7800-295 Beja
                 </p>
             </div>
-            <!-- fotografia de perfil -->
-            <div class="col-sm-3 text-center">
-                <img class="img-profile" src="img/isb.jpg" alt="Fotografia do docente">
-            </div>
         </div>
         <!-- /.row -->
 
     </div>
     <!-- /.container -->
+    
+    <footer class="container">
+     <hr>
+      <p><b>©2015 - Laboratório de Sistemas de Informação e Interatividade - ESTIG</b></p>
+    </footer>
 
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
