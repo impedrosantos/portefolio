@@ -24,9 +24,10 @@ footer {
  /*class*/
 
  .container>.banner {
+  color: white;
     height: 14em;
     border: 0px !important;
-    background-color: rgb(203, 243, 92);
+    background-color: rgb(176, 36, 44);
  }
 
  .img-profile {
