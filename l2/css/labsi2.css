@@ -1,0 +1,40 @@
+/*!
+ * Laboratório de Sistemas de Sistemas de Informacao e Interatividade da ESTIG - IPBeja
+ */
+
+
+body {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+hr {
+  border-color: #888 !important;
+  background-color: #ccc !important;
+  color: #ccc !important;
+}
+
+footer {
+	padding-bottom: 1em;
+  padding-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: center;
+}
+
+ /*class*/
+
+ .container>.banner {
+    height: 14em;
+    border: 0px !important;
+    background-color: rgb(203, 243, 92);
+ }
+
+ .img-profile {
+    height: 14em;
+ }
+
+ /*id*/
+
+ #main-logo{
+	max-height: 100%;
+ }
