@@ -4,6 +4,7 @@
 
 
 body {
+  padding-top: 10em;
   font-family: 'Open Sans', sans-serif !important;
 }
 
@@ -33,6 +34,7 @@ footer {
 	text-align: right;
 	padding-top: 1.5em;
 }
+
  /*id*/
 
  #main-logo{
