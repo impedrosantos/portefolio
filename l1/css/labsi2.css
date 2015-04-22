@@ -49,6 +49,7 @@ footer {
 
 .translate-btn {
   line-height: initial;
+  -webkit-line-height: normal;
   margin-top: 1em;
 }
 
