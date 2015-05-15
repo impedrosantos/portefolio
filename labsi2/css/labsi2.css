@@ -9,15 +9,15 @@ body {
 }
 
 h2 {
+  font-size: 1.3em !important;
   color: white !important;
-    border-bottom-right-radius: 7px;
     border-bottom: 2px solid rgba(170, 32, 41, 0.65);
     border-right: 2px solid rgba(170, 32, 41, 0.65);
-    background: linear-gradient(350deg, rgba(170, 32, 41, 0.7), rgba(224, 140, 140, 0.88));
-    width: 100%;
+    background: rgba(224, 140, 140, 0.98);
+    width: 100% !important;
     padding: 3px;
-    margin-bottom: 100px;
-    display: inline;
+    margin-bottom: 1px !important;
+  margin-top: 3px !important;
 }
 
 footer {
@@ -30,6 +30,12 @@ footer {
 
  /*class*/
 
+.header-view{
+overflow: auto;
+}
+.header-view p{
+  padding-bottom: 2px;
+}
 .navbar-brand{
   height: 5em !important;
 }
